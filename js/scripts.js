@@ -42,10 +42,6 @@ var replaceDivisible = function(number) {
   ping(number);
   pong(number);
   pingPong(number);
-  numberArray.forEach(function(number) {
-  $("#output").append("<li>" + number + "</li>");
-  });
-  numberArray = [];
 }
 
 
@@ -59,6 +55,11 @@ $(function() {
     var input = parseInt($("#number").val());
     countUp(input);
     replaceDivisible(numberArray);
+
+    numberArray.forEach(function(number) {
+    $("#output").append("<li>" + number + "</li>");
+    });
+    numberArray = [];
 
     event.preventDefault();
   });

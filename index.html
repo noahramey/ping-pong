@@ -9,26 +9,34 @@
     <title>Ping Pong</title>
   </head>
   <body>
-  <div class="container">
-    <div class="jumbotron">
-      <h1>Ping Pong</h1>
-      <p></p>
+    <div class="container">
+      <div class="jumbotron">
+        <h1>Ping Pong</h1>
+        <p>by Noah Ramey</p>
+      </div>
+
+      <div class="row">
+        <div class="well col-sm-12">
+          <form id="input">
+            <h3>Rules:</h3>
+            <p>1: Numbers divisible by 3 are replaced with "ping"</p>
+            <p>2: Numbers divisible by 5 are replaced with "pong"</p>
+            <p>3: Numbers divisible by 15 are replaced with "pingpong"</p>
+            <div class="form-group">
+              <label for="number">Enter a number:</label>
+              <input type="text" id="number">
+            </div>
+            <button type="submit" id="submit" class="btn btn-primary btn-large">Show my numbers!</button>
+          </form>
+        </div>
+
+      </div>
+        <div class="col-md-8">
+          <ul id="output">
+
+          </ul>
+        </div>
+
     </div>
-
-    <div class="well">
-      <form id="input">
-        <label for="number">Enter a number:</label>
-        <input type="text" id="number">
-
-        <button type="submit" id="submit">Show my numbers!</button>
-      </form>
-    </div>
-
-    <div class="col-md-9">
-      <ul id="output">
-
-      </ul>
-    </div>
-  </div>
   </body>
 </html>
