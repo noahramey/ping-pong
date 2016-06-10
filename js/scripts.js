@@ -59,6 +59,7 @@ $(function() {
     numberArray.forEach(function(number) {
     $("#output").append("<li>" + number + "</li>");
     });
+
     numberArray = [];
 
     event.preventDefault();

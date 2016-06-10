@@ -10,12 +10,21 @@ ul {
   height: auto;
 }
 
-.jumbotron p {
+.jumbotron h1 {
+  font-size: 100px;
+}
+
+.jumbotron #p1 {
   color: #337ab7;
+  font-size: 25px;
+}
+
+.jumbotron p {
+  font-size: 1.2em;
 }
 
 li {
-  font-size: 1.2em;
-  text-align: left;
+  font-size: 1.5em;
+  text-align: center;
   color: #337ab7;
 }
