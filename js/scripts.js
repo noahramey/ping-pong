@@ -14,7 +14,7 @@ var countUp = function(number) {
 // spec 2: numbers divisible by 3 are replaced with "ping". //
 var ping = function(number) {
 numberArray.forEach(function(number) {
-  if (number % 3 === 0) {
+  if (number % 3 === 0 && number % 5 !== 0) {
     numberArray[number-1] = "ping";
   }
 });
@@ -24,11 +24,22 @@ numberArray.forEach(function(number) {
 // spec 3: numbers divisible by 5 are replaced with "pong". //
 var pong = function(number) {
 numberArray.forEach(function(number) {
-  if (number % 5 === 0) {
+  if (number % 5 === 0 && number % 3 !== 0) {
     numberArray[number-1] = "pong";
   }
 });
 }
+// end spec 3: ====================== //
+
+// spec 4: numbers divisible by 15 are replaced with "pingpong". //
+var pingPong = function(number) {
+  numberArray.forEach(function(number) {
+    if (number % 15 === 0) {
+      numberArray[number-1] = "pingpong";
+    }
+  });
+}
+// end spec 4 ====================== //
 
 
 
@@ -42,6 +53,7 @@ $(function() {
     countUp(input);
     ping(numberArray);
     pong(numberArray);
+    pingPong(numberArray);
     console.log(numberArray);
   });
 });
