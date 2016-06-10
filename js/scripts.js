@@ -1,6 +1,4 @@
 // BACK END //
-
-var start = 0;
 var numberArray = [];
 
 // spec 1: count up to the specified number. //
