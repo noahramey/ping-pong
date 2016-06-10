@@ -1,12 +1,4 @@
-ul {
-  list-style: none;
-}
-
 .jumbotron {
-  background-image: url()
-  background-position: 0% 33%;
-  background-size: cover;
-  background-repeat: no-repeat;
   height: auto;
 }
 
@@ -27,4 +19,8 @@ li {
   font-size: 1.5em;
   text-align: center;
   color: #337ab7;
+}
+
+ul {
+  list-style: none;
 }
