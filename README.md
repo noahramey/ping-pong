@@ -9,6 +9,7 @@ Clone this repository from https://github.com/noahramey/ping-pong
 ## Usage
 
 Open index.html in Google Chrome or your default web browser.
+You can see the site live at: https://noahramey.github.io/ping-pong
 
 ## Contributing
 
