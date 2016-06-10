@@ -9,7 +9,6 @@ var countUp = function(number) {
     numberArray.push(i);
   }
 }
-// end spec 1: =======================//
 
 // spec 2: numbers divisible by 3 are replaced with "ping". //
 var ping = function(number) {
@@ -19,7 +18,6 @@ numberArray.forEach(function(number) {
   }
 });
 }
-// end spec 2: =====================//
 
 // spec 3: numbers divisible by 5 are replaced with "pong". //
 var pong = function(number) {
@@ -29,7 +27,7 @@ numberArray.forEach(function(number) {
   }
 });
 }
-// end spec 3: ====================== //
+
 
 // spec 4: numbers divisible by 15 are replaced with "pingpong". //
 var pingPong = function(number) {
@@ -39,21 +37,29 @@ var pingPong = function(number) {
     }
   });
 }
-// end spec 4 ====================== //
+
+var replaceDivisible = function(number) {
+  ping(number);
+  pong(number);
+  pingPong(number);
+  numberArray.forEach(function(number) {
+  $("#output").append("<li>" + number + "</li>");
+  });
+  numberArray = [];
+}
 
 
 
 // FRONT END //
 $(function() {
   $("#input").submit(function(event) {
-    event.preventDefault();
+
+    $("#output").empty();
 
     var input = parseInt($("#number").val());
-
     countUp(input);
-    ping(numberArray);
-    pong(numberArray);
-    pingPong(numberArray);
-    console.log(numberArray);
+    replaceDivisible(numberArray);
+
+    event.preventDefault();
   });
 });
